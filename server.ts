@@ -28,7 +28,11 @@ app.use(
   cors({
     origin: process.env.CORS_ORIGIN
       ? process.env.CORS_ORIGIN.split(",")
-      : ["http://localhost:3000", "http://localhost:5173"],
+      : [
+          "http://localhost:3000",
+          "http://localhost:5173",
+          "https://cahapikmessenger.up.railway.app",
+        ],
     methods: ["GET", "POST"],
     credentials: true,
   })
@@ -210,7 +214,11 @@ const io = new Server(server, {
   cors: {
     origin: process.env.CORS_ORIGIN
       ? process.env.CORS_ORIGIN.split(",")
-      : ["http://localhost:3000", "http://localhost:5173"],
+      : [
+          "http://localhost:3000",
+          "http://localhost:5173",
+          "https://cahapikmessenger.up.railway.app",
+        ],
     methods: ["GET", "POST"],
     credentials: true,
   },
