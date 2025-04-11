@@ -1,0 +1,18 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "ballast.proxy.rlwy.net",
+            "port": 13276,
+            "driver": "MySQL",
+            "name": "MySQL",
+            "database": "railway",
+            "password": "rkEfGVpDwlKspGPuIyfMaVCgzbwetoBL",
+            "username": "root"
+        }
+    ]
+}
