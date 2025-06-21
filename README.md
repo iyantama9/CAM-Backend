@@ -191,3 +191,17 @@ CREATE TABLE IF NOT EXISTS users (
     password VARCHAR(255) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+```
+
+### Tabel `users`
+Menyimpan data chat
+```sql
+CREATE TABLE IF NOT EXISTS messages (
+    id VARCHAR(36) PRIMARY KEY,
+    user_id VARCHAR(36) NOT NULL,
+    username VARCHAR(255) NOT NULL,
+    text TEXT NOT NULL,
+    timestamp BIGINT NOT NULL,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+```
